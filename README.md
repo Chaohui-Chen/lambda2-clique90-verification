@@ -6,7 +6,7 @@ Computational material for *Characterization of graphs with second largest eigen
 
 ## Files
 
-- **`L2C90.ipynb`** contains the exact Python enumeration of minimal forbidden marked graphs and the positive-semidefinite 67-screen used in Propositions 2.6 and 2.7. The notebook includes saved results from a complete run.
+- **`L2C90.ipynb`** contains the exact Python enumeration of minimal forbidden marked graphs and the positive-semidefinite 67-screen used in Propositions 2.7 and 2.8. The notebook includes saved results from a complete run.
 - **`D.txt`** contains the resulting catalogue, one marking-preserving isomorphism class per line. Each line is `marking graph6(H)`, where `graph6(H)` encodes the graph $H$, not its support graph. Line numbers begin at 1.
 
 ## Results
