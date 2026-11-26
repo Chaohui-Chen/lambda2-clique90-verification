@@ -13,11 +13,11 @@ Computational material for *Characterization of graphs with second largest eigen
 
 The enumeration through order 10 gives **1,878** minimal forbidden marked graphs. The counts by orders 3–10 are 4, 9, 14, 18, 22, 75, 323 and 1,413. Of the 1,878 graphs, **1,812** are all marked and **66** contain at least one unmarked vertex.
 
-For every $(H,\boldsymbol c)$ in the catalogue, the notebook tests
+For every $(H,\boldsymbol b)$ in the catalogue, the notebook tests
 
 $$
-67\bigl(\widehat A(H,\boldsymbol c)+2I\bigr)
-+2\boldsymbol c\boldsymbol c^{\mathsf T}\succeq0.
+67\bigl(\widehat A(H,\boldsymbol b)+2I\bigr)
++2\boldsymbol b\boldsymbol b^{\mathsf T}\succeq0.
 $$
 
 The only survivor is the fully marked graph $H_*=K_1\vee(K_6\cup K_2\cup K_1)$ (catalogue entry 792).
