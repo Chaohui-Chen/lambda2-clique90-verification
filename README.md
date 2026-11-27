@@ -6,7 +6,7 @@ Computational material for *Characterization of graphs with second largest eigen
 
 ## Files
 
-- **`L2C90.ipynb`** contains the exact Python enumeration of minimal forbidden marked graphs and the positive-semidefinite 67-screen used in Propositions 2.7 and 2.8. The notebook includes saved results from a complete run.
+- **`L2C90.ipynb`** contains the exact Python enumeration of minimal forbidden marked graphs and the scalar 67-screen used in Propositions 2.7 and 2.8. The notebook includes saved enumeration results from a complete run and scalar screening results from the supplied catalogue.
 - **`D.txt`** contains the resulting catalogue, one marking-preserving isomorphism class per line. Each line is `marking graph6(H)`, where `graph6(H)` encodes the graph $H$, not its support graph. Line numbers begin at 1.
 
 ## Results
@@ -16,11 +16,10 @@ The enumeration through order 10 gives **1,878** minimal forbidden marked graphs
 For every $(H,\boldsymbol b)$ in the catalogue, the notebook tests
 
 $$
-67\bigl(\widehat A(H,\boldsymbol b)+2I\bigr)
-+2\boldsymbol b\boldsymbol b^{\mathsf T}\succeq0.
+2\boldsymbol b^{\mathsf T}\bigl(\widehat A(H,\boldsymbol b)+2I\bigr)^{-1}\boldsymbol b\le-67.
 $$
 
-The only survivor is the fully marked graph $H_*=K_1\vee(K_6\cup K_2\cup K_1)$ (catalogue entry 792).
+The test solves the nonsingular linear system $(\widehat A(H,\boldsymbol b)+2I)\boldsymbol x=\boldsymbol b$ in exact rational arithmetic and compares $2\boldsymbol b^{\mathsf T}\boldsymbol x$ with $-67$. The only survivor is the fully marked graph $H_*=K_1\vee(K_6\cup K_2\cup K_1)$ (catalogue entry 792).
 
 The paper proves that the relevant minimal forbidden marked graphs have at most ten vertices. This order bound is used as an input to the finite enumeration.
 
